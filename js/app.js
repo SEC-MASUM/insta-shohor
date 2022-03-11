@@ -158,8 +158,11 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
-  const likedPosts = getLikedPosts();
   document.getElementById("liked").textContent = "";
+  const h1 = document.createElement("h1");
+  h1.innerText = "Liked posts";
+  document.getElementById("liked").appendChild(h1);
+  const likedPosts = getLikedPosts();
   likedPosts.forEach((post) => {
     const div = createPost(post);
     document.getElementById("liked").appendChild(div);
