@@ -174,10 +174,20 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Cancellations made 7 days or more in advance of the event
-                    date, will receive a 100% refund. Cancellations made within
-                    3 - 6 days will incur a 20% fee. Cancellations made within
-                    48 hours to the event will incur a 30% fee.
+                    Local storage এর ডাটা browser এ স্থায়ী ভাবে save থাকে,
+                    যতক্ষন না সেই ডাটা কে মেনুয়ালি ডিলিট না করা হয়। তাই বাউজার
+                    এর ট্যাব বা উইন্ডো ক্লোজ করে দেয়ার পরেও সেই ডাটা থেকে যায়।
+                    এই জন্য পরবর্তিতে Local Storage এর ডাটা ব্রাউজার এর যে কোন
+                    উইন্ডো বা ট্যাব থেকে থেকে access করা যায়। Local Storage
+                    তুলনামূলক Session Storage এর চেয়ে অনেক বেশি মেমোরি(5MB/10MB)
+                    ব্যবহার করতে পারে।
+                    <br />
+                    Session storage এর ডাটা browser এ স্থায়ী ভাবে save থাকে না।
+                    তাই বাউজার এর ট্যাব বা উইন্ডো ক্লোজ করে দেয়ার পরে সেই ডাটা
+                    অটোমেটিক ডিলিট হয়ে যায়। এই জন্য পরবর্তিতে Session Storage এর
+                    ডাটা ব্রাউজার এর অন্য কোনো উইন্ডো বা ট্যাব থেকে access করা
+                    যায় না। Session Storage তুলনামূলক Local Storage এর চেয়ে অনেক
+                    কম মেমোরি(4KB) ব্যবহার করতে পারে।
                   </div>
                 </div>
               </div>
