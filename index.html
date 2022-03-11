@@ -148,12 +148,18 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Planning an event can take from weeks to months, it really
-                    depends on the size and the details that the event involves.
-                    Having enough time allows you to comfortably cover different
-                    areas and prepare yourself for potential scenarios that
-                    might happen so you can consider various options prior the
-                    date. You always need more time than you think!
+                    Event loop asyncronous way তে কাজ করে। JavaScript Engine এর
+                    ভিতর call stack থাকে। JS code এর মধ্যে যখন কোনো function কে
+                    call করা হয় তখন সেই function JavaScript Engine এর call stack
+                    এর মধ্যে stack আকারে জমতে থাকে। কিন্তু যখন কোনো async
+                    function call করা হয় তখন call stack সেই function কে নিজের
+                    কাছে না রেখে browser API (Web API) এর কাছে পাঠিয়ে দেয়।
+                    browser API সেই funtion এর যা করার সেটা করার পরে event queue
+                    (callback queue) তে পাঠিয়ে দেয়। আর বেচারা Event loop সব সময়
+                    call stack কে চেক করে দেখে সে ফাকা হয়েছে কিনা। যখনই call
+                    stack কে ফাকা দেখে তখনই event queue এর function কে call
+                    stack এ পাঠিয়ে দেয় execute করার জন্য। এইটাই চচ্ছে Event loop
+                    এর কাজ।
                   </div>
                 </div>
               </div>
