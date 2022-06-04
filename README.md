@@ -1,6 +1,4 @@
-# insta-shohor-SEC-MASUM
-
-### Private Repo Link: [https://classroom.github.com/a/vptyegDI](https://classroom.github.com/a/vptyegDI)
+# Insta Shohor
 
 # [LIVE](https://insta-sohor-debug.netlify.app/)
 
